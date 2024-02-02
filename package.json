@@ -1,0 +1,42 @@
+{
+  "name": "chat-project",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "concurrently": "^8.2.0",
+    "cra-template": "1.2.0",
+    "json-server": "^0.17.3",
+    "moment": "^2.29.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.7",
+    "react-scripts": "5.0.1",
+    "redux": "^4.2.1",
+    "uuid": "^9.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "new": "concurrently \"react-scripts start\" \"npx json-server data.json --watch -p 3001\"",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

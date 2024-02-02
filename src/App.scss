@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;500;400;700&display=swap");
+
+body {
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+.app {
+  width: 100%;
+  min-height: 100vh;
+  background-color: hsl(228, 33%, 97%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  width: 700px;
+
+  position: relative;
+  .div {
+    width: 700px;
+    background-color: hsl(0, 0%, 100%);
+    margin-top: 20px;
+    padding: 20px 0 20px 20px;
+    display: flex;
+    align-items: center;
+
+    border-radius: 10px;
+    .score {
+      width: 40px;
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      border-radius: 10px;
+      background-color: hsl(223, 19%, 93%);
+      margin-right: 20px;
+      color: hsl(238, 40%, 52%);
+      font-weight: 700;
+      .fas {
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+      }
+      .fas:active {
+        opacity: 0.5;
+      }
+    }
+    .item {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      .item-info {
+        width: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .i_info {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          img {
+            width: 30px;
+          }
+          .username {
+            font-weight: 700;
+          }
+          .time {
+            font-weight: 500;
+            opacity: 0.5;
+          }
+        }
+        .icon {
+          color: hsl(238, 40%, 52%);
+          cursor: pointer;
+          .replies-btn {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+          .fas {
+            color: hsl(238, 40%, 52%);
+          }
+          .delete {
+            color: red;
+          }
+          .edit {
+            margin-left: 10px;
+            color: s;
+          }
+          .you {
+            width: 50px;
+            height: 25px;
+            background-color: #5457b6;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            margin-right: 100px;
+          }
+          .acc-icon {
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+      .content {
+        width: 600px;
+      }
+    }
+  }
+  .reply {
+    width: 550px;
+    margin-left: 150px;
+    .item {
+      .item-info {
+        width: 450px;
+      }
+      .reply-content {
+        width: 450px;
+        .replyTo {
+          font-weight: 700;
+          color: hsl(238, 40%, 52%);
+        }
+      }
+    }
+    .p {
+      position: absolute;
+      left: 40px;
+      border-left: 2px solid hsl(216, 7%, 86%);
+      height: 160px;
+    }
+  }
+}
+
+.reply-form {
+  width: 680px;
+  height: 120px;
+  background-color: #fff;
+  margin: 20px 0 20px 0;
+  padding: 20px 40px 20px 20px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  border-radius: 10px;
+  .reply-textarea {
+    height: 100px;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  .reply-img {
+    width: 40px;
+  }
+  .reply-btn {
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #5457b6;
+    color: white;
+    outline: none;
+    border: 1px solid #5457b6;
+    cursor: pointer;
+  }
+}
+
+.btns {
+  width: 300px;
+  height: 200px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  .delete-btns {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .cancel-btn {
+    width: 120px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #a9a2a2;
+    color: #fff;
+  }
+  .delete-btn {
+    width: 120px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: red;
+    color: #fff;
+  }
+}
